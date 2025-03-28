@@ -1,0 +1,240 @@
+body {
+    font-family: system-ui;
+    background-color: #282726;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    flex-direction: column;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px; 
+}
+
+#title {
+    font-size: 2rem; 
+    color: #F9F4DA;
+    margin: 0;
+    margin-top: 50px;
+}
+
+#desc {
+    max-width: 650px;
+    opacity: 0.5;
+    color: white;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.bar-span {
+    background-color: #74bd47;
+    padding: 20px;
+    border: 1px solid;
+    border-radius: 5px;
+    margin-right: 7px;
+    margin-bottom: 30px;
+}
+
+.current-word {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 100%;
+    height: 50px;
+    gap: 2px;
+    font-size: 2rem; 
+}
+
+.current-letter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #323232;
+    border: none;
+    border-bottom: 1px solid #F9F4DA;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+
+.Keyboard {
+    margin-top: 30px;
+    max-width: 520px;
+    max-height: 164px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.keyboard-letter{
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid #D7D7D7;
+    background-color: #FCBA29;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.keyboard-letter:hover{
+    background-color: #cf9922;
+}
+
+.guessed{
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid #D7D7D7;
+    background-color: #10A95B;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.win{
+ background-color: #10A95B;
+}
+
+.lose{
+ background-color: #BA2A2A;
+}
+
+.win, .lose{
+    color: #F9F4DA;
+    width: 450px;
+    border-radius: 6px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.restart-btn {
+    width: 228px;
+    height: 40px;
+    padding: 6px 12px;
+    margin-bottom: 10px;
+    border: 1px solid #D7D7D7;
+    border-radius: 8px;
+    color: #F9F4DA;
+    background-color: #11B5E5;
+    font-weight: bold; 
+    margin-top: 10px;
+}
+
+
+
+.restart-btn:hover {
+    background-color: #13a5d1;
+}
+
+.Hint{
+    width: 228px;
+    height: 40px;
+    padding: 6px 12px;
+    margin-bottom: 10px;
+    border: 1px solid #D7D7D7;
+    border-radius: 8px;
+    color: #F9F4DA;
+    background-color: #11B5E5;
+    font-weight: bold; 
+    margin-top: 25px;
+}
+
+.Hint:hover{
+    background-color: #13a5d1;
+}
+
+.error-boundary{
+    color: #fcefaa;
+    text-align: center;
+}
+
+#foot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #F9F4DA;
+    opacity: 0.6;
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+#foot a {
+    text-decoration: none;
+    color: #fcefaa;
+}
+
+#foot a:hover{
+    color: #f1de7d;
+}
+
+/* MOBILE SUPPORT */
+@media (max-width: 600px) {
+    body {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    #title {
+        font-size: 1.8rem;
+    }
+
+    #desc {
+        font-size: 0.9rem;
+        max-width: 90%;
+    }
+
+    .bar-span {
+        padding: 15px;
+        margin-right: 5px;
+    }
+
+    .current-letter {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+        line-height: 40px;
+    }
+
+    .keyboard-letter {
+        width: 35px;
+        height: 35px;
+        font-size: 14px;
+    }
+
+    .win, .lose {
+        width: 300px;
+        font-size: 1rem;
+    }
+
+    .restart-btn {
+        width: 180px;
+        font-size: 14px;
+    }
+}
