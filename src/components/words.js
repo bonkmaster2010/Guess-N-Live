@@ -13,7 +13,7 @@ const words = [
   "nebula", "orion", "puzzle", "quasar", "resonance", "symphony", "twilight", "utopia", "voyager", "whirlwind",
   "yodel", "zodiac", "aquarium", "blizzard", "cactus", "dagger", "eruption", "firefly", "goblin", "hurricane",
   "illusionist", "jackpot", "koala", "lunar", "miracle", "nebula", "oasis", "portal", "quiver", "runaway",
-  "stardust", "talisman", "undertow", "venture", "warlock", "x-ray", "yeti", "zephyr", "adventure", "butterfly",
+  "stardust", "talisman", "undertow", "venture", "warlock", "xray", "yeti", "zephyr", "adventure", "butterfly",
   "cascade", "dolphin", "exodus", "fountain", "glimmer", "hovercraft", "incantation", "journey", "keystone", "levitate",
   "memento", "nightingale", "oracle", "phoenix", "quintessential", "radiance", "sorcery", "treasure", "umbra", "vagabond",
   "wanderlust", "xenophobia", "yearning", "zeppelin", "aperture", "blackhole", "covalent", "dimension", "epiphany", "fractal",

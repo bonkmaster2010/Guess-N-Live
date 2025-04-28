@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/App.css'
 
-class ErrorBoundaries{
+class ErrorBoundaries extends React.Component{
     constructor(props){
         super(props)
         this.state = {hasError: false}
@@ -15,3 +15,5 @@ class ErrorBoundaries{
         return this.props.children
      }
 }
+
+export default ErrorBoundaries;
